@@ -4,20 +4,8 @@ This project is a simple Node.js web application containerized with Docker and d
 The pipeline automatically builds and tests the application, creates a Docker image, and pushes it to **DockerHub**.
 
 **Flowchart how the project Work**
- 
-Developer -> Push Code -> GitHub Repo
-                            |
-                            V
-                     GitHub Actions CI/CD
-                            |
-               -----------------------------
-              |  Test Code  |  Build Image |
-               -----------------------------
-                            |
-                      Push to DockerHub
-                            |
-                            V
-                Deploy on Cloud (EC2/K8s/etc.)
+
+ Code Push → GitHub Actions → Run Tests → Build Docker Image → Push to DockerHub
 
 
  # Features
