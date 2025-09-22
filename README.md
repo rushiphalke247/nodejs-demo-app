@@ -39,21 +39,21 @@ npm ci
 npm start
 
 Visit [http://localhost:3000](http://localhost:3000) → you should see:
-# Output
+
 Hello from nodejs-demo-app!
 
 
 ## 🐳 Docker
-# Check Docker Login
+### Check Docker Login 
 docker login
 
-# Check docker image[locally]
+### Check docker image 
 docker images 
 
 ### Run container
 docker run -p 3000:3000 <your-dockerhub-username>/nodejs-demo-app:local
  
-# Generate Personal Access Token in Docker
+### Generate Personal Access Token in Docker
   **Account Settings --> Personal Tokens --> Generate**
  
 ## 🔄 GitHub Actions CI/CD
@@ -69,15 +69,15 @@ The pipeline (`.github/workflows/main.yml`) runs on every push to the **main** b
 
 ## Secrets Required in GitHub Repo
 Go to
-# Settings → Secrets and variables → Actions** and add:
+### Settings → Secrets and variables → Actions** and add:
 
 * `DOCKERHUB_USERNAME` → your DockerHub username
 * `DOCKERHUB_TOKEN` → your DockerHub access token (from DockerHub > Account Settings > Security > New Access Token)
 
 
-## ✅ Verifying the Pipeline
+## Verifying the Pipeline
 
-* Check **Actions tab** in GitHub → workflow should show ✅
+* Check **Actions tab** in GitHub → workflow should show
 * Go to [DockerHub](https://hub.docker.com/) → your repo should contain `nodejs-demo-app`
 * Pull and run the pushed image:
 
