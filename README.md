@@ -27,7 +27,7 @@ nodejs-demo-app/
 ├─ test.js               # Basic test
 └─ README.md             # Project documentation
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repo
 git clone https://github.com/rushiphalke247/nodejs-demo-app.git
@@ -43,7 +43,7 @@ Visit [http://localhost:3000](http://localhost:3000) → you should see:
 Hello from nodejs-demo-app!
 
 
-## 🐳 Docker
+## Docker
 ### Check Docker Login 
 docker login
 
@@ -56,7 +56,7 @@ docker run -p 3000:3000 <your-dockerhub-username>/nodejs-demo-app:local
 ### Generate Personal Access Token in Docker
   **Account Settings --> Personal Tokens --> Generate**
  
-## 🔄 GitHub Actions CI/CD
+## GitHub Actions CI/CD
 
 The pipeline (`.github/workflows/main.yml`) runs on every push to the **main** branch:
 
